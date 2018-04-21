@@ -1,12 +1,6 @@
 import numpy as np
-import pandas as pd
-from math import sqrt
 from random import randint, random
-import itertools as it
 
-from sklearn.neural_network import MLPClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import scale, RobustScaler
 
 
 
