@@ -49,8 +49,8 @@ def get_global_best(population, gbest):
 def constants_decay_rate(gen, max_gens, c):
         start_c = c
         end_c = 1.75
-        const_c_gens = 0.85 * max_gens  # 10% of learning time
-        c_decay_gens = 0.9 * max_gens  # 60% of learning time
+        const_c_gens = 0.85 * max_gens  
+        c_decay_gens = 0.9 * max_gens  
 
         if gen < const_c_gens:
             return start_c
@@ -67,8 +67,8 @@ def constants_decay_rate(gen, max_gens, c):
 def max_velocity_decay_rate(gen, max_gens, max_vels):
         start_vel = max_vels
         end_vel = 1.0
-        const_vel_gens = 0.1 * max_gens  # 10% 
-        vel_decay_gens = 0.6 * max_gens  # 60% 
+        const_vel_gens = 0.1 * max_gens  
+        vel_decay_gens = 0.6 * max_gens  
 
         if gen < const_vel_gens:
             return max_vels
